@@ -1,0 +1,33 @@
+{
+  "name": "paro-app-module-v4",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "biome lint --write",
+    "format": "biome format --write",
+    "check": "biome check --write",
+    "reporter": "biome check --reporter=summary",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.66.0",
+    "axios": "^1.7.9",
+    "hls.js": "^1.5.20",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-legacy": "^6.0.1",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+}
