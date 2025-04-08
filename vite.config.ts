@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import legacy from '@vitejs/plugin-legacy';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -13,7 +14,8 @@ export default defineConfig({
             targets: ['chrome >= 69'],
             polyfills: true,
             renderLegacyChunks: false   // 단일 번들파일 생성
-        })
+        }),
+        tailwindcss()
     ],
     build: {
         cssTarget: 'chrome69',
